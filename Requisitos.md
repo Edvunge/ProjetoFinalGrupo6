@@ -1,52 +1,70 @@
 # Requisitos
 
 ## Utilizador
-    Deve
+    Deve ser possivél
         Autenticar
         Gerir dados
+            Criar
+            Editar
         Gerir reservas
+            Criar
+            Apagar
+            Editar
         Ver disponibilidade salas
-
 
         Reservar salas
             Indicar quantidade pessoas
 
-        Ver avaliação
-            Avaliar
-
         Ver de acordo localização
         Ver localização
-        Pesquisar por zonas
-        Ver preços/hora
-        Filtrar
-            Preços
-            Zonas
-            Disponibilidade
-            Ratings
-            Tipos de salas
-        Apagar Conta
+
+### Pesquisa
+     Pesquisar por zonas
+        Ver avaliação
+        Avaliar
+
+    Ver preços/hora
+    Filtrar
+        Preços
+        Zonas
+        Disponibilidade
+        Ratings
+        Tipos de salas
+    Apagar Conta
 
 ## Parceiros
-    Deve
+    Deve ser possivél
         Autenticar
         Gerir dados
+            Criar dados
+            Editar dados
+
         Gerir Disponibilidade dos Espaços
+            Desabilitar espaços
+            Abilitar espaços
+
         Ver disponibilidade salas
         Gerir dados das salas(descrições,tamanhos,informações adicionais,tipo de sala)
+            Adicionar dados
+            Apagar dados
+            Editar dados
         Ver ratings
-        Gerir preços
+        Alterar preços
         Gerir lugares de interesse
+            Adicionar Lugares
+            Editar Lugares
+            Apagar Lugares
         Apagar Conta
         
 
 ## Visitantes
-    Deve
+    Deve ser possivél
         Ver disponibilidade salas
         Ver avaliação
         Ver de acordo localização
         Ver localização
         Ver preços/hora
-        Conseguir criar conta
+        Criar conta
 
         Filtrar
             Preços
@@ -56,9 +74,9 @@
             Tipos de salas
 
 ## Admins
-    Faz tudo aka:
-        Autenticar
-            Gerir
+    Deve ser possivél fazer tudo o que os outros utilizadores fazem, mais:
+        Gerir
+            Criar,Editar e Apagar
                 Utilizadores
                 Parceiros
                 Espaços
