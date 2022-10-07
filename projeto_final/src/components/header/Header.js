@@ -10,6 +10,8 @@ import { format } from "date-fns";
 
 export const Header = () => {
   const [openDate, setOpenDate] = useState(false);
+  const [openPeople, setOpenPeople] = useState(false);
+  const [qtdPeople, setQtdPeople] = useState(1);
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -35,7 +37,7 @@ export const Header = () => {
           </div>
           <div className={styles.headerSearchItem}>
             <CalendarMonthIcon className={styles.headerIcon} />
-            <span onClick={() => setOpenDate(prevState => prevState === true ? prevState = false : prevState = true)}className={styles.headerSearchText}>{`${format(
+            <span onClick={() => setOpenDate(!openDate)}className={styles.headerSearchText}>{`${format(
               date[0].startDate,
               "dd/MM/yyyy"
             )} to ${format(date[0].endDate, "dd/MM/yyyy")}`}</span>
@@ -49,7 +51,7 @@ export const Header = () => {
           </div>
           <div className={styles.headerSearchItem}>
             <PersonIcon className={styles.headerIcon} />
-            <span className={styles.headerSearchText}>2 People</span>
+            <span className={styles.headerSearchText}>{`${qtdPeople} Pessoa`}</span>
           </div>
           <div className={styles.headerSearchItem}>
             <button className={styles.headerButton}>Search</button>
