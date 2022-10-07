@@ -5,8 +5,20 @@ import PersonIcon from "@mui/icons-material/Person";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { DateRange } from "react-date-range";
+import { useState } from "react";
+import "react-date-range/dist/styles.css"; // main css file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { format } from "date-fns";
 
 export const Header = () => {
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
@@ -43,7 +55,17 @@ export const Header = () => {
           </div>
           <div className={styles.headerSearchItem}>
             <CalendarMonthIcon className={styles.headerIcon} />
-            <span className={styles.headerSearchText}>date do date</span>
+            <span className={styles.headerSearchText}>{`${format(
+              date[0].startDate,
+              "MM/dd/yyyy"
+            )} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
+            <DateRange
+              editableDateInputs={true}
+              onChange={(item) => setDate([item.selection])}
+              moveRangeOnFirstSelection={false}
+              ranges={date}
+              className={styles.date}
+            />
           </div>
           <div className={styles.headerSearchItem}>
             <PersonIcon className={styles.headerIcon} />

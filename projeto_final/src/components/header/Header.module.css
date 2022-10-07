@@ -76,6 +76,7 @@
     cursor: pointer;
 }
 
-.headerListItem {
-    
+.date {
+    position: absolute;
+    top: 40px;
 }
