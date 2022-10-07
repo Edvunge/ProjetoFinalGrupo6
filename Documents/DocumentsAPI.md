@@ -4,14 +4,16 @@
 
 aqui ficará a documentção dos endpoints todos: os Gets, Posts, Put e por ai.
 
-- GET   
-      1. teste1 <br>
-      2. teste2 <br>
-      3. teste3 <br>
+Endpoint que recebe um id como parametros e devolve o item que tiver esse id
+- GET  /api/teste/:id
    DTO req {}
-   DTO res { colection: coisas }
+   DTO res { colection: string[] }
 
-- POST
+- POST /api/auth/login
+- DTO req {email, password}
+- Faz va
+- DTO res {token: string}
+  
 - PUT
 - CREATE
 - DELETE
@@ -28,6 +30,27 @@ A resposta do método PATCH deve incluir:
 
 Código de estado 
     ex: 404 quando acontecer alguma coisa ou não.
+
+
+
+
+
+
+
+
+
+LISTA DE APIs Necessarias
+
+API que carrega o menuPrincipal;
+API que adiciona permite criar conta;
+API que  login;
+API que reserva o lugar através do ID;
+API que user(permite o user visualizar a homePage);
+
+
+DOCUMENTAÇÂO DO FUNCIONAMENTO da APIs 
+
+A API menuPrincipal 
 
 
 
