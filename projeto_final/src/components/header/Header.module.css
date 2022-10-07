@@ -1,6 +1,6 @@
 .header {
-    background-color: #dea54b;
-    color: white;
+    background-color: #ffbd59;
+    color: #231f1f;
     display: flex;
     justify-content: center;
     position: relative;
@@ -12,20 +12,6 @@
     margin: 20px 0px 100px 0px;
 }
 
-.headerList {
-    display: flex;
-    gap: 40px;
-}
-
-.headerListItem {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 20px;
-}
-
 .headerDescription {
     margin: 20px 0px;
 }
@@ -33,7 +19,7 @@
 .headerSearch {
     height: 30px;
     background-color: white;
-    border: 3px solid lightgray;
+    border: 2px solid #231f1f;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,7 +32,7 @@
 }
 
 .headerIcon {
-    color: lightgray;
+    color: #231f1f;
 }
 
 .headerSearchItem {
@@ -67,12 +53,12 @@
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
-    color: white;
-    background-color: #dea54b;
+    color: #231f1f;
+    background-color: #ffbd59;
 }
 
 .headerSearchText {
-    color: lightgray;
+    color: #231f1f;
     cursor: pointer;
 }
 
