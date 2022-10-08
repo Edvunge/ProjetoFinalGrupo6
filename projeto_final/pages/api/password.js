@@ -1,9 +1,9 @@
-const express = require('express')
+/*const express = require('express')
 const { request, response } = require("express")
-const app = express()
+const app = express()*/
 const PORT = process.env.PORT ?? 3000
  
-app.use(express.json())
+//app.use(express.json())
 
 app.patch("/api/password", (request, response) => {
     const { password, confirmacaoPassword } = request.body
