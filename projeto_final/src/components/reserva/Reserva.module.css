@@ -1,0 +1,11 @@
+.content{
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+.botaoVoltar{
+    
+    cursor: pointer;
+}
