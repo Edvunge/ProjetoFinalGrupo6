@@ -1,4 +1,5 @@
 import Featured from "../src/components/featured/Featured";
+import FeaturedProperties from "../src/components/featuredProperties/FeaturedProperties";
 import Header from "../src/components/header/Header";
 import Navbar from "../src/components/navbar/Navbar";
 import Reserva from "../src/components/reserva/Reserva";
@@ -14,6 +15,8 @@ export default function Home() {
         <Featured />
         <h1 className={styles.homeTitle}>Procure por tipo de sala</h1>
         <RoomsList />
+        <h1 className={styles.homeTitle}>Salas que os utilizadores amaram</h1>
+        <FeaturedProperties />
       </div>
     </div>
   );
