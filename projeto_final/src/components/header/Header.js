@@ -19,6 +19,11 @@ export const Header = () => {
       key: "selection",
     },
   ]);
+
+  const handleOption = (operation) => {
+    setQtdPeople((previous) => operation === "i" ? previous + 1 : previous - 1)
+  }
+  
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
@@ -51,8 +56,17 @@ export const Header = () => {
           </div>
           <div className={styles.headerSearchItem}>
             <PersonIcon className={styles.headerIcon} />
-            <span className={styles.headerSearchText}>{`${qtdPeople} Pessoa`}</span>
+            <span onClick={() => setOpenPeople(!openPeople)} className={styles.headerSearchText}>{qtdPeople}</span>
           </div>
+          {openPeople && <div className={styles.qtdPeople}>
+            <div className={styles.optionQtdPeople}>
+              <div className={styles.optionCounter}>
+              <button disabled={qtdPeople <= 1} className={styles.optionCounterButton} onClick={() => handleOption("d")}>-</button>
+              <span className={styles.optionCounterNumber}>{qtdPeople}</span>
+              <button className={styles.optionCounterButton} onClick={() => handleOption("i")}>+</button>
+              </div>
+            </div>
+          </div>}
           <div className={styles.headerSearchItem}>
             <button className={styles.headerButton}>Search</button>
           </div>
