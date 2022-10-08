@@ -8,7 +8,7 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 
-export const Header = () => {
+export default function Header({type}) {
   const [openDate, setOpenDate] = useState(false);
   const [openPeople, setOpenPeople] = useState(false);
   const [qtdPeople, setQtdPeople] = useState(1);
@@ -26,8 +26,10 @@ export const Header = () => {
   
   return (
     <div className={styles.header}>
-      <div className={styles.headerContainer}>
-        <h1 className={styles.headerTitle}>Be with us</h1>
+      <div className={type === "list" ? styles.headerContainerlistMode : styles.headerContainer}>
+        { type !== "list" &&
+          <>
+          <h1 className={styles.headerTitle}>Be with us</h1>
         <p className={styles.headerDescription}>
           Encontre locais para trabalhar em seu próximo projeto...
         </p>
@@ -70,7 +72,7 @@ export const Header = () => {
           <div className={styles.headerSearchItem}>
             <button className={styles.headerButton}>Search</button>
           </div>
-        </div>
+        </div></>}
       </div>
     </div>
   );

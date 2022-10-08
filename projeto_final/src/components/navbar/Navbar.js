@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
 import HailIcon from "@mui/icons-material/Hail";
 
-export const Navbar = () => {
+export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.navconteiner}>
