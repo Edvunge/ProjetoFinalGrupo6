@@ -3,12 +3,13 @@ import PersonIcon from "@mui/icons-material/Person";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { DateRange } from "react-date-range";
+import { format } from "date-fns";
 import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { format } from "date-fns";
 
 export default function Header({type}) {
+  const [districts, setDistricts] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [openPeople, setOpenPeople] = useState(false);
   const [qtdPeople, setQtdPeople] = useState(1);
@@ -20,9 +21,11 @@ export default function Header({type}) {
     },
   ]);
 
+
   const handleOption = (operation) => {
     setQtdPeople((previous) => operation === "i" ? previous + 1 : previous - 1)
   }
+
   
   return (
     <div className={styles.header}>
@@ -40,7 +43,8 @@ export default function Header({type}) {
               type="text"
               placeholder="Lisboa..."
               className={styles.headerSearchInput}
-            ></input>
+              onChange={(e) => setDistricts(e.target.value)}
+            />
           </div>
           <div className={styles.headerSearchItem}>
             <CalendarMonthIcon className={styles.headerIcon} />
@@ -54,6 +58,7 @@ export default function Header({type}) {
               moveRangeOnFirstSelection={false}
               ranges={date}
               className={styles.date}
+              minDate={new Date()}
             />}
           </div>
           <div className={styles.headerSearchItem}>

@@ -26,6 +26,24 @@
     margin-bottom: 10px;
 }
 
+.lsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.lsItem>label {
+    font-size: 12px;
+}
+
+.lsItem>input {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .listResult {
     flex: 3;
 }

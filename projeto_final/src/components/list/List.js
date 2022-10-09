@@ -12,6 +12,14 @@ export default function List() {
           <div className={styles.listWrapper}>
             <div className={styles.listSearch}>
               <h1 className={styles.lsTitle}>Search</h1>
+              <div className={styles.lsItem}>
+                <label>Distritos</label>
+                <input type="text" />
+              </div>
+              <div className={styles.lsItem}>
+                <label>Data de Check-in</label>
+                <input type="text" />
+              </div>
             </div>
             <div className={styles.listResult}></div>
           </div>
