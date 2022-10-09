@@ -10,9 +10,10 @@ import { useState } from "react";
 */
 export default function Reserva() {
   const [metodo, setMetodo] = useState(1);
-  return (
+  return(
     <div className={styles.content}>
-    <input type="text" placeholder="Nome na reserva"></input> 
+
+    <input type="text" placeholder="Nome na reserva"></input>
     <span>Numero de pessoas: </span> 
     <span>Metodo de pagamento</span> 
 
@@ -29,7 +30,7 @@ export default function Reserva() {
           {metodo == 4 && <input type="text" placeholder="1234 5678 1234 5678"></input>}
         {metodo == 5 && <span className={styles.botaoVoltar} onClick={()=> setMetodo(1)}>Crypto </span> }
         {metodo == 5 &&   <input type="text" placeholder="1234 5678 1234 5678"></input>}
-    <span>Preço/pessoa:</span> 
+    <span>Preço/pessoa:</span>
     </div>
   );
 }
