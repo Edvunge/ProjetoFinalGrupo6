@@ -13,16 +13,18 @@
 
 .listSearch {
     flex: 1;
-    background-color: #ffbd59;
+    background-color: #231f1f;
     padding: 10px;
     border-radius: 10px;
     position: sticky;
     top: 10px;
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
 }
 
 .lsTitle {
     font-size: 20px;
-    color: #231f1f;
+    color: #ffbd59;
     margin-bottom: 10px;
 }
 
@@ -35,6 +37,7 @@
 
 .lsItem>label {
     font-size: 12px;
+    color: #ffbd59;
 }
 
 .lsItem>input {
