@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className={styles.navconteiner}>
         <Link href="/"><a><span className={styles.logo}>Hive.co</span></a></Link>
         <div className={styles.navitens}>
-          <button className={styles.navbutton}>Registo</button>
+          <Link href="/registar"><button className={styles.navbutton}>Registo</button></Link>
           <Link href="/login"><button className={styles.navbutton}>Login</button></Link>
         </div>
       </div>

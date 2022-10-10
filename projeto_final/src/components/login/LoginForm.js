@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Login.module.css";
 import Link from "next/link";
-
+import Image from "next/image"
 
 
 
@@ -12,12 +12,12 @@ export default function LoginForm() {
                 <h2>Login</h2>
                 <span>
                     Email:
-                    <br /><input type="text"></input>
+                    <br /><input placeholder="example@example.com" type="text"></input>
                 </span>
                 <br />
                 <span>
                     Password:
-                    <br /><input type="password"></input>
+                    <br /><input placeholder="*********" type="password"></input>
                 </span>
                 <Link href="/"><p className={styles.paragrafo}>Recuperar Palavra-passe</p></Link>
                 <div className={styles.divButtons}>
@@ -26,6 +26,6 @@ export default function LoginForm() {
                     <button className={styles.button}>Login</button>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

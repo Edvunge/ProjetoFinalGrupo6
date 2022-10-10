@@ -1,16 +1,17 @@
 .divContainer {
     width: 100vw;
     height: calc(100vh - 65px);
-
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url("./maisfacildecopiar.jpg");
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .divLogin {
+    filter: none;
     width: 20vw;
     height: 45vh;
     display: flex;
@@ -27,10 +28,11 @@
 
 .divLogin>span>input {
     height: 3vh;
-    width: 20vh;
+    width: 30vh;
     border: none;
     border-radius: 0.5vh;
     padding: 5px;
+    filter: none;
 }
 
 .button {
