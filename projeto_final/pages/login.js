@@ -8,7 +8,7 @@ export default function Login() {
     return (
         <div className={styles.container}>
             <Navbar />
-            
+
             <LoginForm />
         </div>
     );

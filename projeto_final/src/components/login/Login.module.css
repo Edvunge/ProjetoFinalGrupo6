@@ -6,12 +6,13 @@
     justify-content: center;
     background-image: url("./maisfacildecopiar.jpg");
 
+    filter: blur(3px);
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .divLogin {
-    filter: none;
     width: 20vw;
     height: 45vh;
     display: flex;
