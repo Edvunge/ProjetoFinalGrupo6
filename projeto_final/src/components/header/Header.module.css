@@ -81,7 +81,7 @@
 
 .qtdPeople {
     position: absolute;
-    margin-left: 501px;
+    margin-left: 240px;
     top: 40px;
     background-color: white;
     color: #231f1f;
@@ -120,3 +120,4 @@
 .optionCounterButton:disabled {
     cursor: not-allowed;
 }
+
