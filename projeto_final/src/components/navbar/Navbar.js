@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+import Header from "../header/Header";
 
 export default function Navbar() {
   return (
@@ -8,9 +9,10 @@ export default function Navbar() {
         <Link href="/"><a><span className={styles.logo}>Hive.co</span></a></Link>
         <div className={styles.navitens}>
           <button className={styles.navbutton}>Registo</button>
-          <button className={styles.navbutton}>Login</button>
+          <Link href="/login"><button className={styles.navbutton}>Login</button></Link>
         </div>
       </div>
+      <Header type="list" />
     </div>
   );
 };
