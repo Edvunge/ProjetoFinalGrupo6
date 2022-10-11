@@ -7,8 +7,23 @@ import Navbar from "../src/components/navbar/Navbar";
 import BotaoReserva from "../src/components/reserva/BotaoReserva";
 import RoomsList from "../src/components/roomsList/roomsList";
 import styles from "../styles/Home.module.css";
+import { useEffect } from "react";
 
 export default function Home() {
+
+
+  /*function carregarDados() {
+    // fgdnjkrsdfhl
+    fetch("/nasa/data-base", {
+      method: "DELETE"
+    })
+    // with tha solution
+    // sav to the state
+  }
+
+  useEffect(() => {
+    carregarDados()
+  }, [])*/
   return (
     <div className={styles.container}>
       <Navbar />
