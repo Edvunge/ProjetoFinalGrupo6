@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import Header from "../header/Header";
 import styles from "./List.module.css";
+import { format } from "date-fns";
 import { useRouter } from "next/router";
 import { DateRange } from "react-date-range";
 import SearchItem from "../searchItem/SearchItem";
@@ -40,7 +41,10 @@ export default function List() {
               <span
                 onClick={() => setOpenDate(!openDate)}
                 placeholder={`${dateCheckIn} to ${dateCheckOut}`}
-              ></span>
+              >{`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
+                date[0].endDate,
+                "dd/MM/yyyy"
+              )}`}</span>
               {openDate && (
                 <DateRange
                   onChange={(item) => setDate([item.selection])}
@@ -57,13 +61,13 @@ export default function List() {
                   <span className={styles.lsOptionText}>
                     Preço Min <small>por dia</small>
                   </span>
-                  <input type="number" className={styles.lsOptionInput} />
+                  <input type="number" min={10} className={styles.lsOptionInput} />
                 </div>
                 <div className={styles.lsOptionItem}>
                   <span className={styles.lsOptionText}>
                     Preço Max <small>por dia</small>
                   </span>
-                  <input type="number" className={styles.lsOptionInput} />
+                  <input type="number" min={10} className={styles.lsOptionInput} />
                 </div>
                 <div className={styles.lsOptionItem}>
                   <span className={styles.lsOptionText}>Pessoas</span>
@@ -79,6 +83,14 @@ export default function List() {
             <button>Search</button>
           </div>
           <div className={styles.listResult}>
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
+            <SearchItem />
             <SearchItem />
             <SearchItem />
             <SearchItem />

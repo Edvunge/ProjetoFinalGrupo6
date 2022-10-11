@@ -15,7 +15,17 @@ export default function SearchItem() {
         <span className={styles.siPlacesOfInterest}>Locais de interesse</span>
         <span className={styles.siFeatures}>Features</span>
       </div>
-      <div className={styles.siDetails}>Detalhes</div>
+      <div className={styles.siDetails}>
+        <div className={styles.siRating}>
+          <span>Exelente</span>
+          <button>8.9</button>
+        </div>
+        <div className={styles.siDetailTexts}>
+          <span className={styles.siPrice}>£125</span>
+          <span className={styles.siTaxa}>Inclui taxa e IVA</span>
+          <button className={styles.siCheckButton}>Ver Disponibilidade</button>
+        </div>
+      </div>
     </div>
   );
 }
