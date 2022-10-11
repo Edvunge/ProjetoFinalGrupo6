@@ -47,6 +47,43 @@
     padding: 5px;
 }
 
+.lsItem>span {
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+.lsOptions {
+    padding: 10px;
+}
+
+.lsOptionItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #ffbd59;
+    font-size: 12px;
+}
+
+.lsOptionInput {
+    width: 50px;
+    border-radius: 3px;
+}
+
+.listSearch>button {
+    padding: 10px;
+    background-color: #ffbd59;
+    color: #231f1f;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .listResult {
     flex: 3;
 }

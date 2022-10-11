@@ -29,11 +29,15 @@ export default function Header({ type }) {
     );
   };
   const handleClick = () => {
-    // console.log(date[0].endDate);
-    console.log(format(date[0].startDate, "dd/MM/yyyy"));
-    console.log(format(date[0].endDate, "dd/MM/yyyy"));
-    /////////PREENCHER COM STATE
-    router.push("/places?PEOPLE=3");
+    router.push(
+      `/places?qtdPeople=${qtdPeople}&&dateCheckIn=${format(
+        date[0].startDate,
+        "dd/MM/yyyy"
+      )}&&dateCheckOut=${format(
+        date[0].endDate,
+        "dd/MM/yyyy"
+      )}&&districts=${districts}`
+    );
   };
 
   return (
