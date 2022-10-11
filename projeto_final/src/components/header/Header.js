@@ -5,10 +5,12 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
 export default function Header({ type }) {
+  const router = useRouter();
   const [districts, setDistricts] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [openPeople, setOpenPeople] = useState(false);
@@ -25,6 +27,13 @@ export default function Header({ type }) {
     setQtdPeople((previous) =>
       operation === "i" ? previous + 1 : previous - 1
     );
+  };
+  const handleClick = () => {
+    // console.log(date[0].endDate);
+    console.log(format(date[0].startDate, "dd/MM/yyyy"));
+    console.log(format(date[0].endDate, "dd/MM/yyyy"));
+    /////////PREENCHER COM STATE
+    router.push("/places?PEOPLE=3");
   };
 
   return (
@@ -110,7 +119,9 @@ export default function Header({ type }) {
                 </div>
               )}
               <div className={styles.headerSearchItem}>
-                <button className={styles.headerButton}>Search</button>
+                <button onClick={handleClick} className={styles.headerButton}>
+                  Search
+                </button>
               </div>
             </div>
           </>
