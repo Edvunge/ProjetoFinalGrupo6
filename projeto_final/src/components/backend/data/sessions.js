@@ -7,7 +7,7 @@ const SESSION_COLLECTION = 'sessions'
 
 async function addSession(userId) {
     const collection = await getMongoCollection(DATABASE, SESSION_COLLECTION)
-    const result = await collection.insertOne({userId})
+    const result = await collection.insertOne({ userId })
     return result.insertedId
 }
 

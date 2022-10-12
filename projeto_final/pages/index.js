@@ -4075,7 +4075,7 @@ const loved = [
     "steet": "Lake Street",
     "name": "Junipoor",
     "location": "Hollins",
-    "workStations": 113
+    "workStations": 113,
   }
 ]
 

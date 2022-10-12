@@ -34,7 +34,7 @@
     box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
 
 
-    transition: all 1.2s linear
+    transition: transform 1.2s linear
 }
 
 .featuredTitles {
