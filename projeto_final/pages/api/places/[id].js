@@ -3,8 +3,6 @@ import Places from "../../../src/models/Places"
 
 export default async function (req, res) {
   
-
-   
     //UPDATE
     if (req.method === "PUT") {
         await connect()
