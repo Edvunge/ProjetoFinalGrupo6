@@ -8,7 +8,7 @@ export default function PropertiesList({ properties }) {
         <div className={styles.rList}>
             {properties.map((property) => (
                 <div key={property._id} className={styles.rListItem}>
-                    <img src="https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg" alt="setubal" className={styles.rListImg} />
+                    <img src={property.image} alt="setubal" className={styles.rListImg} />
                     <div className={styles.rListTitles}>
                         <h1>{property.name}</h1>
                         <h2>{property.workStations} Workstations</h2>

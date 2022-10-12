@@ -6,7 +6,7 @@ export default function FeaturedProperties({ properties }) {
         <div className={styles.fp}>
             {properties.map((property) => (
                 <div key={property._id} className={styles.fpItem}>
-                    <img src="https://sitio.pt/cms/wp-content/uploads/2021/02/DedicatedDesk_Visconde.jpg" alt="setubal" className={styles.fpImg} />
+                    <img src={property.image} alt="setubal" className={styles.fpImg} />
                     <span className={styles.fpName}>Postos Individuais</span>
                     <span className={styles.fpCity}>{property.name}</span>
                     <span className={styles.fpPrice}>Á partir de 120€</span>

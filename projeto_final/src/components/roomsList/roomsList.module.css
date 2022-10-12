@@ -1,8 +1,7 @@
 .rList {
-    width: 100%;
-    max-width: 1024px;
+    width: 100vw;
+    max-width: 1030px;
     display: flex;
-    justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
