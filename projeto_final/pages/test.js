@@ -8,51 +8,39 @@ export default function sitios() {
 
     return (
         <div className={styles.wrapper}>
-            <div style={{ height: "1240px", width: "100%", backgroundColor: "red" }}></div>
-            <Item>
+            <div style={{ height: "1240px", width: "100%" }}></div>
+            <Item type="right">
                 ola
             </Item>
-            <div style={{ height: "1240px", width: "100%", backgroundColor: "red" }}></div>
+            <div style={{ height: "40px", width: "100%" }}></div>
+            <Item type="left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis neque at tellus porttitor consequat scelerisque in arcu. Aliquam sit amet metus diam. Sed fringilla diam et aliquam viverra. Proin dignissim mattis fermentum. Sed sit amet mauris cursus, convallis neque vitae, dictum nunc. Sed in nisl mollis, vestibulum nulla vitae, laoreet odio. In dictum posuere finibus. Pellentesque dignissim bibendum facilisis. Aliquam eu sapien lectus.
+            </Item>
+            <div style={{ height: "1240px", width: "100%" }}></div>
         </div >
     );
 }
 
-const Item = ({ children }) => {
+const Item = ({ children, type }) => {
     const ref = useRef(null)
-    const isInViewPort = useOnScreen(ref)
-    
+    const [isInViewPort, setInViewPort] = useState(false)
+    useEffect(() => {
+        const handleScroll = () => {
+            const box = ref.current.getBoundingClientRect()
+            setInViewPort(box.bottom <= window.innerHeight)
+        }
+        document.addEventListener("scroll", handleScroll)
+        return () => document.removeEventListener("scroll", handleScroll)
+    }, [ref])
     return (
-        <div ref={ref} className={
-            buildClassNames(isInViewPort)
-        } >
+        <div ref={ref}
+            style={{ transform: `translateX(${type === "right" ? "+" : "-"}${isInViewPort ? 0 : 3000}px)` }}
+            className={
+                [styles.animated]
+                    .concat(isInViewPort ? styles.active : null)
+                    .join(" ")
+            } >
             {children}
         </div >
     )
-}
-
-const buildClassNames = (isInViewPort) => {
-    console.log(
-        [styles.animated]
-            .concat(isInViewPort ? styles.active : null)
-    )
-    return [styles.animated]
-        .concat(isInViewPort ? styles.active : null)
-        .join(" ")
-}
-
-function useOnScreen(ref) {
-    const [isIntersecting, setIntersecting] = useState(false)
-    if (!typeof window === 'undefined') return isIntersecting
-
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => setIntersecting(entry.isIntersecting)
-        )
-        observer.observe(ref.current)
-        // Remove the observer as soon as the component is unmounted
-        return () => { observer.disconnect() }
-    }, [])
-
-    return isIntersecting
 }

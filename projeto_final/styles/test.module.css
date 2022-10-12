@@ -6,11 +6,10 @@
 }
 
 .animated {
-    transform: translateX(-1000px);
-
-    transition: transform 250ms linear;
+    max-width: 60vw;
+    transition: transform 500ms ease-out;
 }
 
 .active {
-    background-color: red;
+    transform: translateX(0px);
 }
