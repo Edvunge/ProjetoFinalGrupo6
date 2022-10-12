@@ -8,6 +8,7 @@ import BotaoReserva from "../src/components/reserva/BotaoReserva";
 import RoomsList from "../src/components/roomsList/roomsList";
 import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
+import BotaoParceiro from "../src/components/parceiro/BotaoParceiro";
 
 export default function Home() {
 
@@ -34,6 +35,7 @@ export default function Home() {
         <RoomsList />
         <h1 className={styles.homeTitle}>Salas que os utilizadores amaram</h1>
         <FeaturedProperties />
+        <BotaoParceiro />
         <MailList />
         <Footer />
       </div>
