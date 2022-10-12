@@ -4079,6 +4079,7 @@ const loved = [
   }
 ]
 
+
 const featured = [
   {
     "_id": "6346944a267a6896f66f38ea",
@@ -4141,7 +4142,7 @@ export default function Home() {
         <h1 className={styles.homeTitle}>Procure por tipo de sala</h1>
         <PropertiesList properties={properties.default} />
         <h1 className={styles.homeTitle}>Salas que os utilizadores amaram</h1>
-        <FeaturedProperties />
+        <FeaturedProperties properties={properties.loved} />
         <BotaoParceiro />
         <MailList />
         <Footer />

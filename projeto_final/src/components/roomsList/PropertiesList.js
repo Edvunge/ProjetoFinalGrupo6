@@ -14,7 +14,6 @@ export default function PropertiesList({ properties }) {
                         <h2>{property.workStations} Workstations</h2>
                     </div>
                 </div>
-
             ))}
         </div>
     )
