@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./maisfacildecopiar.jpg");
+    background-image: url("./grey-concrete-building-blue-sky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -121,8 +121,7 @@
     position: absolute;
     color: white;
     top: 430px;
-    left: 650px;
-    height: 100%;
+    left: 665px;
     font-size: 40px;
 }
 
@@ -135,7 +134,7 @@
     background-position: -100px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    filter: blur(1px);
+    filter: blur(1px) grayscale(0.5) contrast(0.8) brightness(1) saturate(0.5);
 }
 
 .co {
@@ -144,11 +143,9 @@
     color: #ffbd59;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hive {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 70px;
     font-weight: 1000;
     color: #231f1f;
