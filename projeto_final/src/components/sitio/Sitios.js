@@ -2,7 +2,7 @@ import styles from "./Sitios.module.css"
 import react from 'react'
 import Link from "next/link";
 
-export default function Sitio() {
+export default function Sitio(properties) {
     return (
         <div className={styles.divDaDivDoSitio}>
             <div className={styles.divSitio}>
@@ -16,7 +16,7 @@ export default function Sitio() {
                 <h1 className={styles.titulo}>Nome</h1>
                 <div className={styles.caixa}>
                     <div className={styles.caixaPequena}>
-
+                    
                         <div className={styles.hex} id="1"><div className={styles.hexDiv}>Sala<br />10 Pessoas</div></div>
                         <div className={styles.hex} id="2"></div>
                         <div className={styles.hex} id="3"></div>
