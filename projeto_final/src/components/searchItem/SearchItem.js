@@ -21,7 +21,7 @@ export default function SearchItem() {
           <button>8.9</button>
         </div>
         <div className={styles.siDetailTexts}>
-          <span className={styles.siPrice}>£125</span>
+          <span className={styles.siPrice}>125€</span>
           <span className={styles.siTaxa}>Inclui taxa e IVA</span>
           <button className={styles.siCheckButton}>Ver Disponibilidade</button>
         </div>

@@ -20,6 +20,7 @@ export default function Sitio() {
                         <div className={styles.hex} id="1"><div className={styles.hexDiv}>Sala<br />10 Pessoas</div></div>
                         <div className={styles.hex} id="2"></div>
                         <div className={styles.hex} id="3"></div>
+                        <div className={styles.hex} id="3"></div>
                     </div>
                     <div className={styles.caixaPequena}>
                         <div className={styles.hex} id="4"></div>

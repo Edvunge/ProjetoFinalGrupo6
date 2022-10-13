@@ -59,6 +59,7 @@
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    font-weight: 700;
     cursor: pointer;
     color: #231f1f;
     background-color: #ffbd59;
@@ -120,4 +121,3 @@
 .optionCounterButton:disabled {
     cursor: not-allowed;
 }
-
