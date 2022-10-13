@@ -121,7 +121,7 @@
     position: absolute;
     color: white;
     top: 430px;
-    left: 665px;
+    left: 610px;
     font-size: 40px;
 }
 
@@ -143,6 +143,7 @@
     color: #ffbd59;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hive {
@@ -151,4 +152,5 @@
     color: #231f1f;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffbd59;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
