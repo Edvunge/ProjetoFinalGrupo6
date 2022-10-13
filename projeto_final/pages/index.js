@@ -14,7 +14,7 @@ const prupridades = [
     "_id": "6346961732cc944bf9f831c4",
     "roomNr": 8,
     "ratings": [
-      5,9,
+      5, 9,
       6,
       1,
       6,
@@ -115,8 +115,9 @@ const prupridades = [
     "name": "Talkola",
     "location": "Allamuchy",
     "workStations": 47
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617bd99e7118970974d",
     "roomNr": 7,
@@ -192,8 +193,9 @@ const prupridades = [
     "name": "Playce",
     "location": "Kylertown",
     "workStations": 20
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617c6c68d1833de15e1",
     "roomNr": 1,
@@ -211,13 +213,14 @@ const prupridades = [
   {
     "_id": "63469617274ec5dd3fb086b9",
     "roomNr": 9,
-    "ratings": [2,7,3,2,10],
+    "ratings": [2, 7, 3, 2, 10],
     "steet": "Kane Place",
     "name": "Satiance",
     "location": "Kerby",
     "workStations": 54
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "6346961712c37a8310f02f28",
     "roomNr": 3,
@@ -226,48 +229,53 @@ const prupridades = [
     "name": "Netility",
     "location": "Nelson",
     "workStations": 71
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617a6f45e943613deae",
     "roomNr": 12,
-    "ratings": [4,1,9,10,2,2],
+    "ratings": [4, 1, 9, 10, 2, 2],
     "steet": "Cleveland Street",
     "name": "Orboid",
     "location": "Eggertsville",
     "workStations": 71
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617dc06d64accad01d7",
     "roomNr": 3,
-    "ratings": [3,2,4,5,9],
+    "ratings": [3, 2, 4, 5, 9],
     "steet": "Chestnut Avenue",
     "name": "Qiao",
     "location": "Florence",
     "workStations": 87
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617d6220e08f01ef3df",
     "roomNr": 3,
-    "ratings": [10,7,9],
+    "ratings": [10, 7, 9],
     "steet": "Willow Place",
     "name": "Stucco",
     "location": "Hegins",
     "workStations": 95
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "634696170d04fc953493b264",
     "roomNr": 7,
-    "ratings": [8,7,1,6,6,3,9],
+    "ratings": [8, 7, 1, 6, 6, 3, 9],
     "steet": "Emerald Street",
     "name": "Konnect",
     "location": "Salunga",
     "workStations": 54
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617333ff86c259f6be8",
     "roomNr": 5,
@@ -281,7 +289,7 @@ const prupridades = [
   {
     "_id": "634696173aeea3da5f6d1620",
     "roomNr": 11,
-    "ratings": [8,6],
+    "ratings": [8, 6],
     "steet": "Grattan Street",
     "name": "Gracker",
     "location": "Brookfield",
@@ -291,41 +299,43 @@ const prupridades = [
   {
     "_id": "6346961747a285f87ce9087b",
     "roomNr": 5,
-    "ratings": [5,9,7,7,4,6,8,3,7,9],
+    "ratings": [5, 9, 7, 7, 4, 6, 8, 3, 7, 9],
     "steet": "Hall Street",
     "name": "Unia",
     "location": "Grill",
     "workStations": 32
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "63469617d851914cd5d58380",
     "roomNr": 2,
-    "ratings": [9,4,9,10,6],
+    "ratings": [9, 4, 9, 10, 6],
     "steet": "Dobbin Street",
     "name": "Tetratrex",
     "location": "Detroit",
     "workStations": 78
-,
-"image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"  },
+    ,
+    "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
+  },
   {
     "_id": "6346961780d26b962a23d311",
     "roomNr": 10,
-    "ratings": [7,8],
+    "ratings": [7, 8],
     "steet": "Engert Avenue",
     "name": "Edecine",
     "location": "Allensworth",
     "workStations": 164,
     "image": "https://sitio.pt/cms/wp-content/uploads/2021/07/Sitio_Setubal__0299.jpg"
   },
-  
+
 ]
 
 const loved = [
   {
     "_id": "6346943d564da2d1e57d8f9d",
     "roomNr": 12,
-    "ratings": [2,7,9,10,10],
+    "ratings": [2, 7, 9, 10, 10],
     "steet": "Dupont Street",
     "name": "Zillacom",
     "location": "Nicholson",
@@ -345,7 +355,7 @@ const loved = [
   {
     "_id": "6346943da5917838d5faf54e",
     "roomNr": 12,
-    "ratings": [9,4,3,3,3,5,1,1,4],
+    "ratings": [9, 4, 3, 3, 3, 5, 1, 1, 4],
     "steet": "Lake Street",
     "name": "Junipoor",
     "location": "Hollins",
@@ -359,7 +369,7 @@ const featured = [
   {
     "_id": "6346944a267a6896f66f38ea",
     "roomNr": 12,
-    "ratings": [7,8,10],
+    "ratings": [7, 8, 10],
     "steet": "Hubbard Street",
     "name": "Omatom",
     "location": "Gadsden",
@@ -368,7 +378,7 @@ const featured = [
   {
     "_id": "6346944a2a952fe46fe119e2",
     "roomNr": 10,
-    "ratings": [4,5,9,10,9,3,3],
+    "ratings": [4, 5, 9, 10, 9, 3, 3],
     "steet": "Celeste Court",
     "name": "Boilicon",
     "location": "Graball",
@@ -382,7 +392,19 @@ const espacinhosFofinhosLolOkTabem = {
   default: prupridades
 }
 export default function Home() {
-  const [properties, setProperties] = useState(espacinhosFofinhosLolOkTabem)
+  const [properties, setProperties] = useState({ default: [], loved: [], featured: [] })
+
+  useEffect(() => {
+    const fetchPlaces = async () => {
+      const res = await fetch("/api/places")
+      if (res.status === 200) {
+        const json = await res.json()
+        setProperties({ loved: json.loved, default: json.default, featured: json.featured })
+      }
+    }
+
+    fetchPlaces()
+  }, [])
 
   return (
     <div className={styles.container}>

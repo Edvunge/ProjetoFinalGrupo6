@@ -81,14 +81,23 @@ export default async function (req, res) {
 
         try {
             const places = await Places.find();
-            const withoutFeatured = places.filter(p => p.featured !== true)
-            // const defaultAndLoved = getLovedPlaces(places)
+            const placesWithWorkstations = places.map(place => {
+                const nPlace = place.toObject()
+                //Obter as salas deste sitio
+                // Obter a quantidade de workstations de cada sala
+                // Fazer um somatório das workstations
+                //adicionar o somatório ao place
+                const X = 13
+                return ({ ...nPlace, workStations: X })
+            })
+            const withoutFeatured = placesWithWorkstations.filter(p => p.featured !== true)
+            // const defaultAndLoved = getLovedPlaces(placesWithWorkstations)
             // getRating(place)
             // getAverage(place)
 
-            console.log(places)
+            console.log(placesWithWorkstations)
             res.status(200).json({
-                featured: places.filter(p => p.featured === true).slice(0, 2),
+                featured: placesWithWorkstations.filter(p => p.featured === true).slice(0, 2),
                 loved: withoutFeatured.slice(0, 3),
                 default: withoutFeatured.slice(3),
             });
