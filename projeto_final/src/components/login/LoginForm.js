@@ -22,19 +22,21 @@ export default function LoginForm() {
 
                     <h2>Login</h2>
                     <span>
-                        Email:
+                        Email:<br />
                         <br /><input placeholder="example@example.com" type="text"></input>
                     </span>
                     <br />
+                    <br />
                     <span>
-                        Password:
+                        Password:<br />
                         <br /><input placeholder="*********" type="password"></input>
                     </span>
                     <Link href="/"><p className={styles.paragrafo}>Recuperar Palavra-passe</p></Link>
                     <div className={styles.divButtons}>
 
-                        <button className={styles.button}>Registar</button>
-                        <button className={styles.button}>Login</button>
+                        <Link href="/registar"><button className={styles.button}>Registar</button></Link>
+                        <Link href="/"><button className={styles.button}>Login</button></Link>
+
                     </div>
                 </div>
             </div>
