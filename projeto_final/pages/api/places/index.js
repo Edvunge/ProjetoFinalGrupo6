@@ -1,11 +1,12 @@
-import { connect } from "./database"
-import Places from "../../src/models/Places"
+import { connect } from "../database"
+import Places from "../../../src/models/Places"
+import error from "../../../src/components/backend/utils/error"
 
 export default async function (req, res) {
-    if (req.method === "GET") {
-        await connect()
-        const rooms = await getLandingPageRooms()
-    }
+    /* if (req.method === "GET") {
+         await connect()
+         const rooms = await getLandingPageRooms()
+     }*/
 
     //Create a new Place
     if (req.method === "POST") {
@@ -28,15 +29,16 @@ export default async function (req, res) {
     }
 
     //Update a Place
-    if (req.method === "PUT") {
+    /*if (req.method === "PUT") {
         await connect()
+        
         if (req.body && req.params.id) {
             const updatedPlace = await Places.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true })
             res.status(200).json(updatedPlace)
         } else {
             res.status(500).json("Não foi possível realizar a operação!")
         }
-    }
+    }*/
 
     //UPDATE
     if (req.method === "PUT") {
@@ -63,23 +65,33 @@ export default async function (req, res) {
     }
 
     // GET
-    if (req.method === "GET") {
-        await connect()
+    // if (req.method === "GET") {
+    //     await connect()
 
-        try {
-            const Places = await Places.findById(req.params.id);
-            res.status(200).json(places);
-        } catch (err) {
-            res.status(500).json(err);
-        }
-    }
+    //     try {
+    //         const Places = await Places.findById(req.params.id);
+    //         res.status(200).json(Places);
+    //     } catch (err) {
+    //         res.status(500).json(err);
+    //     }
+    // }
     // GET ALL
     if (req.method === "GET") {
         await connect()
 
         try {
-            const Places = await Places.find(req.params.id);
-            res.status(200).json(places);
+            const places = await Places.find();
+            const withoutFeatured = places.filter(p => p.featured !== true)
+            // const defaultAndLoved = getLovedPlaces(places)
+            // getRating(place)
+            // getAverage(place)
+
+            console.log(places)
+            res.status(200).json({
+                featured: places.filter(p => p.featured === true).slice(0, 2),
+                loved: withoutFeatured.slice(0, 3),
+                default: withoutFeatured.slice(3),
+            });
         } catch (err) {
             res.status(500).json(err);
         }
