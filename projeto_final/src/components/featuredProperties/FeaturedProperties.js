@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./FeaturedProperties.module.css";
 
-export default function FeaturedProperties({ properties }) {
+export default function  FeaturedProperties({ properties }) {
     return (
         <div className={styles.fp}>
             {properties.map((property) => (

@@ -411,7 +411,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <div className={styles.homeContainer}>
-        <Featured properties={properties.featured}/>
+        <Featured properties={properties.featured} />
         <h1 className={styles.homeTitle}>Procure por tipo de sala</h1>
         <PropertiesList properties={properties.default} />
         <h1 className={styles.homeTitle}>Salas que os utilizadores amaram</h1>
