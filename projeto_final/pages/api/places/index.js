@@ -64,17 +64,6 @@ export default async function (req, res) {
         }
     }
 
-    // GET
-    // if (req.method === "GET") {
-    //     await connect()
-
-    //     try {
-    //         const Places = await Places.findById(req.params.id);
-    //         res.status(200).json(Places);
-    //     } catch (err) {
-    //         res.status(500).json(err);
-    //     }
-    // }
     // GET ALL
     if (req.method === "GET") {
         await connect()
