@@ -15,7 +15,7 @@ export default function LoginForm() {
 
                     <h2>Registar</h2>
                     <span>
-                        Nome:
+                        Nome:<br />
                         <br /><input placeholder="Nome" type="text"></input>
                     </span>
                     <br />
@@ -35,7 +35,7 @@ export default function LoginForm() {
                     </span>
                     <br />
                     <span>
-                        Telemóvel:
+                        Telemóvel:<br />
                         <br /><input placeholder="912 345 678" type="tel"></input>
                     </span>
                     <div className={styles.divButtons}>
